@@ -4,18 +4,18 @@
         { "roomName": "LivingRoom", "volume": 40}
       ],
       "state": "PLAYING",
-      "playlist": "folk",
+      "favorite": "folk",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
     },
    "chillout": {
       "players": [
-        { "roomName": "LivingRoom", "volume": 40},
-        { "roomName": "BedRoom", "volume": 30}
+        { "roomName": "LivingRoom", "volume": 30},
+        { "roomName": "Bedroom", "volume": 20}
       ],
       "state": "PLAYING",
-      "playlist": "chillout",
+      "favorite": "chillout",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
@@ -23,10 +23,10 @@
    "party": {
       "players": [
         { "roomName": "LivingRoom", "volume": 40},
-        { "roomName": "BedRoom", "volume": 30}
+        { "roomName": "Bedroom", "volume": 20}
       ],
       "state": "PLAYING",
-      "playlist": "lounge",
+      "favorite": "lounge",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
@@ -34,7 +34,7 @@
    "piano": {
       "players": [
         { "roomName": "LivingRoom", "volume": 30},
-        { "roomName": "BedRoom", "volume": 20}
+        { "roomName": "Bedroom", "volume": 20}
       ],
       "state": "PLAYING",
       "favorite": "strictly piano",
@@ -45,11 +45,34 @@
    "tango": {
       "players": [
         { "roomName": "LivingRoom", "volume": 40},
-        { "roomName": "BedRoom", "volume": 30}
+        { "roomName": "Bedroom", "volume": 20}
       ],
       "state": "PLAYING",
-      "playlist": "tango",
+      "favorite": "tango",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
-    },}
+    },
+   "npr": {
+      "players": [
+        { "roomName": "LivingRoom", "volume": 30},
+        { "roomName": "Bedroom", "volume": 10}
+      ],
+      "state": "PLAYING",
+      "favorite": "npr washington",
+      "uri": "x-rincon-stream:RINCON_0000000000001500",
+      "playMode": "SHUFFLE",
+      "pauseOthers": true
+    },
+   "cbc": {
+      "players": [
+        { "roomName": "LivingRoom", "volume": 30},
+        { "roomName": "Bedroom", "volume": 10}
+      ],
+      "state": "PLAYING",
+      "favorite": "cbc montreal",
+      "uri": "x-rincon-stream:RINCON_0000000000001500",
+      "playMode": "SHUFFLE",
+      "pauseOthers": true
+    }
+}
