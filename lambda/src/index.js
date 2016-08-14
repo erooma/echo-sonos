@@ -177,18 +177,22 @@ EchoSonos.prototype.intentHandlers = {
 /** Handles playlists and favorites */
 function playlistHandler(roomValue, presetValue, skillName, response) {
     var skillPath = '/' + skillName + '/' + encodeURIComponent(presetValue.toLowerCase());
+    var playError = "0";
     
     // This first action queues up the playlist / favorite, and it shouldn't say anything unless there's an error
     actOnCoordinator(options, skillPath, roomValue, function(error, responseBodyJson) {
         if (error) {
-            genericResponse(error, response);
+            playlistResponse(error, response);
+            var playError = "1";
         }
     });
     
     // The 2nd action actually plays the playlist / favorite
-    actOnCoordinator(options, '/play', roomValue, function(error, responseBodyJson) {
-        genericResponse(error, response, "Queued and started " + presetValue);
-    });
+    if (playError == "0") {
+        actOnCoordinator(options, '/play', roomValue, function(error, responseBodyJson) {
+            playlistResponse(error, response, "Queued and started " + presetValue);
+        });
+    }
 }
 
 /** Handles all skills of the form /roomname/toggle/[on,off] */
@@ -310,7 +314,21 @@ function actOnCoordinator(options, actionPath, room, onCompleteFun) {
 function genericResponse(error, response, success) {
     if (!error) {
         if (!success) {
-            response.tell("OK");
+            response.tell("Ok");
+        }
+        else {
+            response.tell(success);
+        }
+    }
+    else {
+        response.tell("The Lambda service encountered an error: " + error.message);
+    }
+}
+
+function playlistResponse(error, response, success) {
+    if (!error) {
+        if (!success) {
+            response.tell("Not sure if that worked.");
         }
         else {
             response.tell(success);

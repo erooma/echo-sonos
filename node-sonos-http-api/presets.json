@@ -1,54 +1,55 @@
 {
-    "test": {
+    "folk": {
       "players": [
-        { "roomName": "Master Bedroom", "volume": 30}
+        { "roomName": "LivingRoom", "volume": 40}
       ],
       "state": "PLAYING",
-      "favorite": "Rock",
+      "playlist": "folk",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
     },
-   "rap": {
+   "chillout": {
       "players": [
-        { "roomName": "Dining Room", "volume": 30},
-        { "roomName": "Living Room", "volume": 30},
-        { "roomName": "Master Bedroom", "volume": 30},
-        { "roomName": "Kitchen5", "volume": 40},
-        { "roomName": "KitchenWall", "volume": 50}
+        { "roomName": "LivingRoom", "volume": 40},
+        { "roomName": "BedRoom", "volume": 30}
       ],
       "state": "PLAYING",
-      "favorite": "Rap",
+      "playlist": "chillout",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
     },
-    "pop rap": {
+   "party": {
       "players": [
-        { "roomName": "Dining Room", "volume": 30},
-        { "roomName": "Living Room", "volume": 30},
-        { "roomName": "Master Bedroom", "volume": 30},
-        {"roomName": "Kitchen5", "volume": 40},
-        {"roomName": "KitchenWall", "volume": 50}
+        { "roomName": "LivingRoom", "volume": 40},
+        { "roomName": "BedRoom", "volume": 30}
       ],
       "state": "PLAYING",
-      "favorite": "Rap (Pop)",
+      "playlist": "lounge",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
     },
-    "rock": {
+   "piano": {
       "players": [
-        { "roomName": "Dining Room", "volume": 30},
-        { "roomName": "Living Room", "volume": 30},
-        {"roomName": "Kitchen5", "volume": 40},
-        { "roomName": "Master Bedroom", "volume": 30},
-        {"roomName": "KitchenWall", "volume": 50}
+        { "roomName": "LivingRoom", "volume": 30},
+        { "roomName": "BedRoom", "volume": 20}
       ],
       "state": "PLAYING",
-      "favorite": "Rock",
+      "favorite": "strictly piano",
       "uri": "x-rincon-stream:RINCON_0000000000001500",
       "playMode": "SHUFFLE",
       "pauseOthers": true
-    }
-}
+    },
+   "tango": {
+      "players": [
+        { "roomName": "LivingRoom", "volume": 40},
+        { "roomName": "BedRoom", "volume": 30}
+      ],
+      "state": "PLAYING",
+      "playlist": "tango",
+      "uri": "x-rincon-stream:RINCON_0000000000001500",
+      "playMode": "SHUFFLE",
+      "pauseOthers": true
+    },}
