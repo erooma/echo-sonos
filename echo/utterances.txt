@@ -21,6 +21,9 @@ ResumeAllIntent start all
 ResumeAllIntent continue all
 ResumeAllIntent continue playing all
 ResumeAllIntent continue playing all the music
+ResumeAllIntent start
+ResumeAllIntent resume
+ResumeAllIntent play
 
 ResumeIntent continue the {Room}
 ResumeIntent continue in the {Room}
@@ -40,7 +43,8 @@ ResumeIntent start the music in the {Room}
 PauseAllIntent pause all
 PauseAllIntent pause all the music
 PauseAllIntent stop all
-PauseAllIntent stop all the music 
+PauseAllIntent stop all the music
+PauseAllIntent stop
 
 PauseIntent pause in the {Room}
 PauseIntent pause in {Room}
@@ -84,14 +88,14 @@ VolumeDownIntent lower the volume in the {Room}
 VolumeDownIntent lower the volume in {Room}
 VolumeDownIntent make it quieter in {Room}
 VolumeDownIntent make it quieter in the {Room}
-VolumeUpIntent decrease the volume in {Room}
-VolumeUpIntent decrease the volume in the {Room}
-VolumeUpIntent decrease volume in {Room}
-VolumeUpIntent decrease volume in the {Room}
-VolumeUpIntent reduce the volume in {Room}
-VolumeUpIntent reduce the volume in the {Room}
-VolumeUpIntent reduce volume in {Room}
-VolumeUpIntent reduce volume in the {Room}
+VolumeDownIntent decrease the volume in {Room}
+VolumeDownIntent decrease the volume in the {Room}
+VolumeDownIntent decrease volume in {Room}
+VolumeDownIntent decrease volume in the {Room}
+VolumeDownIntent reduce the volume in {Room}
+VolumeDownIntent reduce the volume in the {Room}
+VolumeDownIntent reduce volume in {Room}
+VolumeDownIntent reduce volume in the {Room}
 
 SetVolumeIntent set volume to {Percent} in {Room}
 SetVolumeIntent set volume to {Percent} percent in {Room}
