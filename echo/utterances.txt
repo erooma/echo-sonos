@@ -17,10 +17,10 @@ FavoriteIntent start favorite {Preset} in {Room}
 FavoriteIntent start favorite {Preset} in the {Room}
 
 ResumeAllIntent resume all
+ResumeAllIntent start all
 ResumeAllIntent continue all
 ResumeAllIntent continue playing all
 ResumeAllIntent continue playing all the music
-
 
 ResumeIntent continue the {Room}
 ResumeIntent continue in the {Room}
@@ -34,6 +34,8 @@ ResumeIntent resume the {Room}
 ResumeIntent resume in the {Room}
 ResumeIntent resume the music in {Room}
 ResumeIntent resume the music in the {Room}
+ResumeIntent start the {Room}
+ResumeIntent start the music in the {Room}
 
 PauseAllIntent pause all
 PauseAllIntent pause all the music
@@ -47,7 +49,6 @@ PauseIntent stop in the {Room}
 PauseIntent stop in {Room}
 PauseIntent stop the music in {Room}
 
-
 VolumeUpIntent turn it up in {Room}
 VolumeUpIntent turn it up in the {Room}
 VolumeUpIntent turn the volume up in {Room}
@@ -58,6 +59,14 @@ VolumeUpIntent volume up in {Room}
 VolumeUpIntent volume up in the {Room}
 VolumeUpIntent raise volume in the {Room}
 VolumeUpIntent raise volume in {Room}
+VolumeUpIntent raise the volume in the {Room}
+VolumeUpIntent raise the volume in {Room}
+VolumeUpIntent make it louder in {Room}
+VolumeUpIntent make it louder in the {Room}
+VolumeUpIntent increase the volume in {Room}
+VolumeUpIntent increase the volume in the {Room}
+VolumeUpIntent increase volume in {Room}
+VolumeUpIntent increase volume in the {Room}
 
 VolumeDownIntent turn it down in {Room}
 VolumeDownIntent turn it down in the {Room}
@@ -71,7 +80,18 @@ VolumeDownIntent volume down in {Room}
 VolumeDownIntent volume down in the {Room}
 VolumeDownIntent lower volume in the {Room}
 VolumeDownIntent lower volume in {Room}
-
+VolumeDownIntent lower the volume in the {Room}
+VolumeDownIntent lower the volume in {Room}
+VolumeDownIntent make it quieter in {Room}
+VolumeDownIntent make it quieter in the {Room}
+VolumeUpIntent decrease the volume in {Room}
+VolumeUpIntent decrease the volume in the {Room}
+VolumeUpIntent decrease volume in {Room}
+VolumeUpIntent decrease volume in the {Room}
+VolumeUpIntent reduce the volume in {Room}
+VolumeUpIntent reduce the volume in the {Room}
+VolumeUpIntent reduce volume in {Room}
+VolumeUpIntent reduce volume in the {Room}
 
 SetVolumeIntent set volume to {Percent} in {Room}
 SetVolumeIntent set volume to {Percent} percent in {Room}
@@ -93,6 +113,8 @@ SetVolumeIntent turn it down to {Percent} in {Room}
 SetVolumeIntent turn it down to {Percent} percent in {Room}
 SetVolumeIntent turn it down to {Percent} in the {Room}
 SetVolumeIntent turn it down to {Percent} percent in the {Room}
+SetVolumeIntent make the volume {Percent} in the {Room}
+SetVolumeIntent make the volume {Percent} percent in the {Room}
 
 NextTrackIntent go to next track in {Room}
 NextTrackIntent go to next track in the {Room}
@@ -191,6 +213,8 @@ JoinGroupIntent join the {JoiningRoom} to the {PlayingRoom}
 
 UngroupIntent ungroup {Room}
 UngroupIntent ungroup the {Room}
+UngroupIntent separate {Room}
+UngroupIntent separate the {Room}
 UngroupIntent isolate {Room}
 UngroupIntent isolate the {Room}
 
